@@ -3,14 +3,20 @@ import HomeView from "../views/HomeView.vue";
 import AwardsView from "../views/AwardsView.vue";
 import ProjectsView from "../views/ProjectsView.vue";
 import SocialsView from "../views/SocialsView.vue";
+import SkillsView from "../views/SkillsView.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
             path: "/",
-            name: "about",
+            name: "home",
             component: HomeView,
+        },
+        {
+            path: "/skills",
+            name: "skills",
+            component: SkillsView,
         },
         {
             path: "/projects",
